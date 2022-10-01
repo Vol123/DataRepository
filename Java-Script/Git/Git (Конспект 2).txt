@@ -1,0 +1,49 @@
+git config --list --show-origin - показать расположение в виде путей
+git config --list - показать все users settings
+Как регистрироваться
+git config --global) user.name "John Doe" - имя
+git config (--global) user.email johndoe@example.com - имейл
+git config --global core.editor emacs(<path>) - текстовый редактор
+git config --global init.defaultBranch <name> - поменять название первоначальной ветки
+git diff - увидеть все изменения которые не закоммичены	 (--staged и --cached являются синонимами) - 
+они дают посмотреть все поэтапные изменения вместе с последним коммитом.
+git mv file_from file_to
+git log --graph - выведет графически
+git log --oneline - самый краткий просмотр
+git log --pretty=oneline - тоже самое, но показан весь номер коммита, а не коротко
+git log -p(выводит разницу между коммитами) -<number> - количество последних коммитов выводить
+!(Тем не менее, опции ограничения времени, такие как --sinceи --until, очень полезны. 
+Например, эта команда получает список коммитов, сделанных за последние две недели: git log --since=2.weeks)
+https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History
+git branch -a - посмотреть все ветки(глобальные в том числе)
+git rm - удалить файл из индекса
+git mv file_from file_to - перемещение файла
+git rm --cached - удалить из индекса, но оставить на жестком диске
+https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things
+git remote -v - просмотр всех удаленных репозиториев
+git remote show origin - просмотр удаленных репозиториев
+git remote rename pb paul - переименование pb -> paul
+git tag -l "message" - просмотреть историю тегов начиная с message
+git tag -a v1.4 -m "my version 1.4" - создание нового тега
+git tag -a v1.2 9fceb02 - чтобы создать версию перед коммитом 9fceb02
+git tag -d <tagname> - удаление тега
+git last - просмотр последнего коммита
+git branch <newbranch> - создание новой ветки
+git log --oneline --decorate - чтобы посмотреть куда указывает ветка
+git branch -v - более подробный просмотре (+показывает название и номер последнего коммита)
+git branch --no-merged - показать ветки у которых не веласт работа
+git branch --move old new - переименование ветки old на new
+git push --set-upstream origin new - чтобы это изменение стало глобальным
+git ls-remote <remote> или git remote show <remote> для удаленных ветвей, а также дополнительную информацию
+git branch -m <newbranch> -  переименование новой ветки
+
+ПРИ ТОМ ЧТО НИЧЕГО НЕ БЫЛО ЗАКОМИЧЕНО ВЕТКА ВСЕ РАВНО СОЗДАЕТСЯ И ТАМ УЖЕ МОЖНО СДЕЛАТЬ КОММИТ 
+НЕ ТРОГАЯ ПЕРВОНАЧАЛЬНУЮ!
+
+git remote get-url <name-remote-repository>
+git push <remote> <tag> - запись версий на глобальный репозиторий
+
+Конспект(сайт)
+https://www.evernote.com/shard/s368/client/snv?noteGuid=b1359883-2b9e-419a-b9de-dd959fc05f05&noteKey=97c0f19486d851b3&sn=https%3A%2F%2Fwww.evernote.com%2Fshard%2Fs368%2Fsh%2Fb1359883-2b9e-419a-b9de-dd959fc05f05%2F97c0f19486d851b3&title=Git
+
+git checkout --track Test/fix1 - создание локальной ветки

@@ -1,0 +1,7 @@
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-diff.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-tag.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-stash.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-revert.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-rebase.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-gc.html
+https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-fsck.html

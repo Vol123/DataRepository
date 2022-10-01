@@ -1,0 +1,10 @@
+POWERSHELL
+https://learn.microsoft.com/pl-pl/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2
+GIT
+https://git-scm.com/book/pl/v2
+GITHUB
+https://github.com/Vol123
+MARKDOWN
+https://learn.microsoft.com/pl-pl/contribute/markdown-reference
+
+(Ten repozitorij tylko dla sieciewego związku z pracej lub datami informacji osobystej)

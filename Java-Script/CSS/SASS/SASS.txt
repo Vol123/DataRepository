@@ -1,0 +1,141 @@
+Создание переменной
+$yellow: #fce473;
+
+Пример вложенности
+.description{
+  p{
+    a{
+      &:hover{}
+    }
+    strong{}
+  }
+  table{
+    tr{
+      &:nth-child(2n){}
+    }
+    th,
+    td{
+      &.empty{}
+    }
+    th{}
+  }
+}
+--------------
+.parent{
+  &:hover{}
+  &.other-class{}
+} - где & - parent
+
+Миксин
+@mixin overlay() {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+------------
+Использование(@include)
+.modal-background{
+  @include overlay();
+  background: black;
+  opacity: 0.9;
+}
+--------------------
+Входные параметры
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+--------------
+Использование
+.box{
+  @include border-radius(3px);
+}
+----------------------
+Необязательные параметры
+@mixin label($text: "Code", $background: $yellow, $color: rgba(black, 0.5)) {
+  position: relative;
+  &:before{
+    background: $background;
+    color: $color;
+    content: $text;
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    height: 1rem;
+    left: 0;
+    letter-spacing: 0.1em;
+    line-height: 1rem;
+    padding: 0 0.5em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+  }
+}
+
+Библиотеки для SCSS(SASS) для быстрого написания кода
+1. Бурбон : bourbon.io
+2. Компас : compass-style.org
+3. Сьюзи : susy.oddbird.net
+-------------------
+
+Разница с миксинами
+.small-uppercase{
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.modal-background{
+  @extend .small-uppercase;
+}
+.product-link{
+  @extend .small-uppercase;
+}
+.image-pattern{
+  @extend .small-uppercase;
+}
+// generated css
+.small-uppercase,
+.modal-background,
+.product-link,
+.image-pattern{
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+--------------------------------------------------------
+
+Заполнители
+%small-uppercase{
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.modal-background{
+  @extend %small-uppercase;
+}
+.product-link{
+  @extend %small-uppercase;
+}
+.image-pattern{
+  @extend %small-uppercase;
+}
+// generated css
+.modal-background,
+.product-link,
+.image-pattern{
+  color: lightslategrey;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 12px;
+  text-transform: uppercase;
+}

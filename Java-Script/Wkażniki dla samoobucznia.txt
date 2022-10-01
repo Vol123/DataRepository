@@ -1,0 +1,3 @@
+https://learn.javascript.ru/ - JavaScript, HTML, CSS(Больше книга, чем справочник)
+http://htmlbook.ru/ - HTML, CSS, Git (Больше справочник, чем книга)
+https://habr.com/ru/post/86403/ - перегрузка функций
