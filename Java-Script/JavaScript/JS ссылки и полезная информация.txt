@@ -1,8 +1,3 @@
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects - полный курс JS
-https://www.youtube.com/watch?v=-6DWwR_R4Xk - что такое ООП JavaScript
-
-Книга по ООП
-«Приёмы объектно-ориентированного проектирования. 
-Паттерны проектирования» авторов Эрих Гамма, Ричард Хелм, Ральф Джонсон, Джон Влиссидес 
-или «Объектно-ориентированный анализ и проектирование с примерами приложений» Гради Буча, 
-а также ещё множество других книг.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5dd9b650d73d75aa895ce1325a9b3812ff107cec52ce73055ece60a95ea69178
+size 708

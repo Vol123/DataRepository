@@ -1,15 +1,3 @@
-1. Когда создал репозиторий на GitHub надо добавить этот репозиторий на локальный компьютер:
-git remote add origin <link on repository>
-2. git init  - инициализация Git(создает файл .git)
-3. git add -A - чтобы положить в index git
-4. git push (-u) origin <branch-name> - чтобу запушить ветку на GitHub
-5. git fetch - дает получить информацию о созданных новых веток GitHub
-6. git pull origin <branch> - нетолько соединяется, но и merge - где не связано
-Merging
-7. git pull origin <another branch>
-7.1 - принять текущие изменения
-7.2 - принять изменения <another branch>
-7.3 - принять оба изменения
-7.4 - сравнить изменения
-Всегда лучше делать pull <main branch> тобы подгружать изменения в ветке мастер
-8. git cherry-pick <number of commit> - забрать и положить коммит в нашу ветку
+version https://git-lfs.github.com/spec/v1
+oid sha256:fc1deb84ecf4645b800c31c3940934bcdcd83f1ae79815b5b292d8fac549cf51
+size 1159

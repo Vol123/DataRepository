@@ -1,4 +1,3 @@
-Вопросы
-a:position
-a::position
-a[title=""]
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee65d2a402caedc0bb30571a7b6da2796200b8f5f427910ea3890a2c41d8cf72
+size 52

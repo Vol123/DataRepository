@@ -1,10 +1,3 @@
-POWERSHELL
-https://learn.microsoft.com/pl-pl/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.2
-GIT
-https://git-scm.com/book/pl/v2
-GITHUB
-https://github.com/Vol123
-MARKDOWN
-https://learn.microsoft.com/pl-pl/contribute/markdown-reference
-
-(Ten repozitorij tylko dla sieciewego związku z pracej lub datami informacji osobystej)
+version https://git-lfs.github.com/spec/v1
+oid sha256:3b41078acd1dc103097aa12044f54fcf0e74e4ee602b0a8d2801ff0fa3df1743
+size 389
